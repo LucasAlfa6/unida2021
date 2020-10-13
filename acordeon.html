@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    
+    <div id="container-main">
+
+        <h1>Nosotros</h1>
+        
+            <div class="accordion-container">
+            
+                <a href="#" class="accordion-titulo">La Universidad de la Integración de las Américas <span class="toggle-icon"></span></a>
+                <div class="accordion-content">
+                    
+                    <p style="font-size: 16px;"> Es una de las más importantes instituciones académicas universitarias del país, de derecho privado, con personería jurídica y autonomía didáctico-científica y disciplinaria. Fue creada por ley Nº 2.081, el 14 de marzo de 2003. Cuenta con una moderna infraestructura edilicia, equipamientos de última generación y 7 carreras universitarias acreditadas por ANEAES, las demás en proceso.
+                        <br>
+                        La Universidad de la Integración de las Américas propone el desarrollo armónico de sus funciones de Docencia, Investigación y Extensión. En ese sentido, con Planes de Estudios cuyo diseño e implementación son reflejos de lo establecido en su misión y visión institucional alcanzando los objetivos de:
+                        <br>
+                        • Formar Profesionales, calificados para las diferentes áreas de actuación y altamente formados para el desarrollo de las competencias clínicas, necesarias para el eficiente ejercicio de su profesión, con una sólida base científica, ética, humana y social.
+                        <br>
+                        • Motivar en el estudiante el sentido de pertenencia, responsabilidad y respeto por la Universidad, sus estamentos y la sociedad, que lo haga capaz de convivir y enriquecerse con las diferencias en la ideología, género y cultura
+                        <br>
+                        • Fomentar en el estudiante una gran capacidad humanista y social, con creatividad y liderazgo, y con un conocimiento actual del proceso salud-enfermedad y de las herramientas adecuadas para intervenir.
+                        <br>
+                        • Favorecer la formación integral del estudiante a través del trabajo interdisciplinario con otras áreas del conocimiento, aprovechando sus aptitudes e intereses.
+                        <br>
+                        • Promover en el estudiante una actitud investigativa, orientada a la reflexión, para motivar, vincular y desarrollar en él una actitud crítica, un pensamiento creativo y hacerlo así intelectualmente más autónomo.
+                    </p>
+              </div>
+                
+            </div>
+        
+        </div>
+
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Muli:300,700|Nunito');
+
+  h1,h2,h3,h4,h5,h6, a {
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    line-height: inherit;
+  }
+
+  h1 {
+    color: #0071bc;
+    font-size: 3em;
+    line-height: normal;
+  }
+
+  h2 {
+    color: #353535;
+    font-size: 2em;
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    margin-bottom: 0;
+  }
+
+  h3,
+  h3 a {
+    color: #454545;
+    border-radius: 15px;
+  }
+
+  p {
+    font-family: 'Muli', sans-serif;
+    color: #757575;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+  }
+
+
+
+
+
+
+#container-main{
+	margin:40px auto;
+	width:95%;
+	min-width:320px;
+    max-width:960px;
+   
+}
+#container-main h1{
+    font-size: 40px;
+   
+	
+}
+
+.accordion-container {
+	width: 100%;
+	margin: 0 0 20px;
+    clear:both;
+    
+}
+
+.accordion-titulo {
+	position: relative;
+	display: block;
+	padding: 20px;
+	font-size: 24px;
+	font-weight: 300;
+	background: #045684;
+	color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.accordion-titulo.open {
+	background:#045684 ;
+	color: #fff;
+}
+.accordion-titulo:hover {
+	background: #0071bc;
+}
+
+.accordion-titulo span.toggle-icon:before {
+	content:"+";
+}
+
+.accordion-titulo.open span.toggle-icon:before {
+	content:"-";
+}
+
+.accordion-titulo span.toggle-icon {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 38px;
+	font-weight:bold;
+}
+
+.accordion-content {
+	display: none;
+	padding: 20px;
+	overflow: auto;
+}
+
+.accordion-content p{
+	margin:0;
+}
+
+.accordion-content img {
+	display: block;
+	float: left;
+	margin: 0 15px 10px 0;
+	width: 70%;
+	height: auto;
+}
+
+
+@media (max-width: 767px) {
+	.accordion-content {
+		padding: 10px 0;
+	}
+}
+
+</style>
+
+
+<script>
+$(function(){
+  $(".accordion-titulo").click(function(e){
+           
+        e.preventDefault();
+    
+        var contenido=$(this).next(".accordion-content");
+
+        if(contenido.css("display")=="none"){ //open		
+          contenido.slideDown(250);			
+          $(this).addClass("open");
+        }
+        else{ //close		
+          contenido.slideUp(250);
+          $(this).removeClass("open");	
+        }
+
+      });
+});
+
+</script>
+
+   
+
+</body>
+
+</html>
+
+
+
+
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galeria de imagenes | Efecto overlay</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://datoweb.com/visor/js/fresco/fresco.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://datoweb.com/visor/css/fresco/fresco.css" />
+</head>
+<div class="content">
+	
+	<h1>Clic en imagen 1</h1>
+	<img src="https://datoweb.com/img/post/3_81_frans_hals.jpg" alt="Prueba" width="400">
+
+	<h1>Clic en imagen 2</h1>
+	<img src="https://datoweb.com/img/post/3_58_frans_hals2.JPG" alt="Prueba2" width="400">
+</div>
+
+
+<a id="verimagenes" class='fresco' data-fresco-group='grupo'></a>
+<script>
+
+    $(document).ready(function(){
+    
+    //Al hacer clic en cualquier img ejecutamos la acción
+    $('.content img').click(function() {
+        //Capturamos el src de la img
+        var postimg= $(this).attr('src');
+        //Agregamos el src a una href simbólico
+        $('#verimagenes').attr('href',postimg);
+        //Hacemos clic en el enlace para activar el visor
+        $('#verimagenes').click();
+    });
+    
+    });
+    </script>
+    
+</body>
+</html>

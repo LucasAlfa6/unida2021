@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hovers</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    
+    <link  rel="icon"   href="images/Guía eclass.png"  sizes="16x16" type="images/Guía eclass.png" />
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/templatemo-style.css">
+
+</head>
+<body>
+  <!-- 
+    <div class="wrap">
+        <button class="button">Submit</button>
+      </div>
+
+
+      <section id="team"   >
+        <div class="container">
+             <div class="row">
+
+                  <div class="col-md-12 col-sm-12">
+                       <div class="section-title">
+                            <h2 style="border-radius: 20px; padding-top: 5px;">Nuestras Facultades <small>Modalidad Presencial</small></h2>
+                       </div>
+                  </div>
+            
+                  <div class="col-md-3 col-sm-6" >
+                      <div class="efect">
+                       <div class="team-thumb" style="border-radius: 15px;">
+                            <div class="team-image">
+                                <a href="facultad de ciencias juridicas y relaciones internacionales.html"> <img src="images/facultades/ciencias juridicas.jpg" class="img-responsive" alt=""></a>
+                            </div>
+                            <a href="facultad de ciencias juridicas y relaciones internacionales.html"><div class="team-info">
+                                 <h3 style="color: #054263;">Facultad de Ciencias Jurídicas y Relaciones Internacionales</h3>
+                               
+                            </div></a>
+                       </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-3 col-sm-6" >
+                       <div class="team-thumb" style="border-radius: 15px;">
+                            <div class="team-image">
+                                <a href="facultad de gestion.html"> <img src="images/facultades/gestion.jpg" class="img-responsive" alt=""></a>
+                            </div>
+                           
+                            <a href="facultad de gestion.html" ><div class="team-info">
+
+
+                                 <h3 style="color: #054263; margin-top: 30px; margin-bottom: 31px;">Facultad de Gestión</h3>
+                              
+                                 
+                                 
+                            </div></a>
+                       </div>
+                  </div>
+
+             </div>
+        </div>
+   </section>
+  -->
+
+
+   <div style="width:100%; height:100%; display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: center; align-items: center; align-content: center; ">
+    <iframe src="https://www.unida.edu.py/facultades/facultad-de-ciencias-juridicas-y-relaciones-internacionales/derecho/" scrolling="no" style="height: 950px; border: 0px none; width: 1080px; margin-top: -240px; margin-left: -50px; ">
+    </iframe>
+    </div>
+    
+
+<style>
+
+
+.team-thumb {
+  transition: all 0.2s ease-in-out 0s;
+  position: relative;
+  }
+
+  .team-thumb::before {  
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: all .3s ease-in-out 0.2s;
+}
+
+.team-thumb:hover, .team-thumb:focus {
+  color: #313133;
+  
+  transform: scale(1.15,1.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  min-width: 300px;
+  min-height: 60px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: #313133;
+  
+background: linear-gradient(90deg,blue 0%, #29abe2 100%);
+  border: none;
+  border-radius: 1000px;
+  
+  transition: all 0.1s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+  }
+
+button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+ 
+  box-shadow: 0 0 60px rgb(66, 209, 245);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  color: #313133;
+  transform: translateY(-20px);
+}
+
+button:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+
+
+button:hover::after, button:focus::after {
+  animation: none;
+  display: none;
+}
+
+
+</style>
+      
+</body>
+</html>
